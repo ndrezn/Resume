@@ -1,0 +1,97 @@
+% TO COMPILE THIS RESUME: latexmk -pdf -pvc resume.tex 
+\documentclass[10pt,ragged2e]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{biblatex}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+\urlstyle{same}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Nathan Drezner}
+\tagline{}
+\personalinfo{
+  \email{\href{mailto:nathan.drezner@mail.mcgill.ca}{nathan.drezner@mail.mcgill.ca}}
+  \email{\href{mailto:nathan@drezner.com}{nathan@drezner.com}}
+  \github{\href{https://github.com/ndrezn}{ndrezn}}
+  \linkedin{\href{https://www.linkedin.com/in/nathan-drezner/}{Nathan Drezner}}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[auxilleryInfo]{Experience}
+
+\cvevent{Research Assistant}{\href{https://txtlab.org}{.txtLab} - a laboratory for cultural analytics at McGill University}{October 2018 -- Present}{Montreal, Canada}
+\begin{itemize}
+\item Designed and oversaw a .txtLab project to study the salient language of disagreement and consensus building on Wikipedia
+\item Conducted data mining of Wikipedia using its API and \textbf{BeautifulSoup} and web scraping of Amazon using BeautifulSoup
+\item Used \textbf{sklearn}, \textbf{pandas}, and \textbf{igraph} in \textbf{Python} and \textbf{R} to conduct network analysis and use NLP and ML to study linguistic patterns
+\item Project overseen by Profs. Andrew Piper and Richard Jean So
+\end{itemize}
+
+\divider
+
+\cvevent{Research Assistant}{\href{https://news.library.mcgill.ca/tag/timeless-riddles/}{Timeless Riddles} - a ROAAr project dedicated to transcribing, solving, and researching riddles found in early manuscripts}{April 2019 -- Present}{Montreal, Canada}
+\begin{itemize}
+\item Oversaw digital humanities analysis of riddles using in \textbf{Python} by classifying riddles and visualizing semantic change based on riddle periods, publishers, and locations
+\item Designed and built a web app to illustrate riddle movement over time with \textbf{MapBox} and \textbf{JavaScript}
+\item Worked with tools and datasets from \textbf{Gale} and \textbf{HathiTrust}
+\item Project overseen by Prof. Nathalie Cooke
+\end{itemize}
+
+\divider
+
+\cvevent{Research Assistant}{\href{https://opalmedapps.com/}{Opal Med Apps} - a patient portal to empower cancer patients}{May 2018 -- August 2018}{Montreal, Canada}
+\begin{itemize}
+\item Produced media to help illustrate the functionality and features of Opal as it was rolled out to patients
+\item Worked with the Cancer Mission Patient's society to help illustrate their goals and mission statement
+\item Project overseen by Profs. John Kildea and Laurie Hendren
+\end{itemize}
+
+\divider
+
+\cvevent{Staff Writer}{\href{http://bullandbearmcgill.com/author/nathan-drezner/}{The Bull and Bear} - McGill's student-run news magazine}{Nov. 2016  -- April 2018}{Montreal, Canada}
+\begin{itemize}
+\item Wrote articles for the Arts \& Entertainment section on a bi-weekly basis
+\item Covered topics including popular culture, technology, and mass media
+\end{itemize}
+
+\cvsection{Awards}
+\cvachievement{Arts Undergraduate Research Award}{Given to support undergraduate students who undertake research during the summer under the direct supervision of a faculty member}{\textit{\$4,000 grant for work with .txtLab, 2019}}
+
+%\divider
+
+\clearpage
+
+\end{document}
